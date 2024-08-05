@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-family: "Inter",sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #root1 {
+        background-image: url('logo-whithout-tagline_white.png');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .nav-main {
+        display: flex;
+        color: white;
+        list-style: none;
+
+    }
+    .nav-home{
+        background-color: rgb(255, 102, 0);
+    }
+    .nav-items{
+        display: flex;
+        width: 8rem;
+        height: 3rem;
+        justify-content:center ;
+        align-items : center;
+        font-size: large;
+        font-weight:bold ;
+    }
+    .nav-items:hover {
+        background-color: black;
+    }
+    .nav-home:hover { 
+        background-color: white !important;
+        color: black; 
+    }
+</style>
+
+<body>
+    <div>
+        <div id="root1">
+            <nav>
+                <ul class="nav-main">
+                    <li class="nav-items nav-home">Home</li>
+                    <li class="nav-items">Our services</li>
+                    <li class="nav-items">Experties</li>
+                    <li class="nav-items">About us</li>
+                    <li class="nav-items">Case Studies</li>
+                    <li class="nav-items">Blog</li>
+                    <li class="nav-items">Careers</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
