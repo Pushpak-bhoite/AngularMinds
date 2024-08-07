@@ -1,52 +1,16 @@
-/**
- * C program to print right arrow star pattern
- */
-
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int i, j, n;
+    int x = 3; // base
+    double y = 2.1;  // power
 
-    // Input number of rows from user
-    printf("Enter value of n : ");
-    scanf("%d", &n);
-
-    // Print the upper part of the arrow
-    for(i=1; i<n; i++)
-    {
-        // Print trailing (2*rownumber-2) spaces
-        for(j=1; j<=(2*i-2); j++)
-        {
-            printf(" ");
-        }
-
-        // Print inverted right triangle star pattern
-        for(j=i; j<=n; j++)
-        {
-            printf("*");
-        }
-
-        printf("\n");
-    }
-
-    // Print lower part of the arrow
-    for(i=1; i<=n; i++)
-    {
-        // Print trailing (2*n - 2*rownumber) spaces
-        for(j=1; j<=(2*n - 2*i); j++)
-        {
-            printf(" ");
-        }
-
-        // Print simple right triangle star pattern
-        for(j=1; j<=i; j++)
-        {
-            printf("*");
-        }
-
-        printf("\n");
-    }
+    // using the pow() function
+    double ans = pow(x, y);
+    
+    // printing the output
+    printf("%f", ans);
 
     return 0;
 }
