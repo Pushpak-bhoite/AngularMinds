@@ -1,15 +1,19 @@
 public class Recursion {
     public static void main(String[] args) {
 
-      int arr[] = {1,2,3,4,5,6,7,8};
+      int arr[] = {5,6};
       System.out.println("length =>"+arr.length);
       int len = arr.length ;
-      sum(len ,arr );
+      recPrint(len-1 ,arr );
     }
-    public static void sum(int k, int arr[]) {
-      int 
-      if()
-      System.out.println(k);
+    public static void recPrint(int k, int arr[]) {
+      
+      if(k > 0){
+        System.out.println("Im just called "+k);
+        recPrint(k-1, arr);
+      }
+      System.out.println("index "+k+ " val " + arr[k]);
+      // System.out.println("arr[k]");
 
     }
   }

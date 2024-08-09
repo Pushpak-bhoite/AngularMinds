@@ -10,7 +10,7 @@ int main()
             printf("%d ", t);
             if (j < i){
                 t--;
-            }
+     AC       }
             if (j > ((n * 2) - 1) - i){
                 t++;
             }
