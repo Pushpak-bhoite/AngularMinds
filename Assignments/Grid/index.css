@@ -1,0 +1,86 @@
+/* or 1fr 1fr */
+/*
+.container{
+    display :grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: 40px auto 40px;
+    text-align: center;
+}
+
+ .header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+} */
+/* -------------------------------------------- */
+
+
+/* .container{
+    display :grid;
+    grid-gap: 3px;
+    grid-template: repeat(2,50px) / repeat(3,50px)  ;
+    text-align: center;
+} */
+/* ---------------Short hand ----------------------------- */
+
+/* .header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+ } 
+ .header {
+    grid-column: 1 / -1 ;
+ }  */
+
+/* ----------------Min max---------------------------- */
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+
+/* -------------Flexible responsive Grid------------------------------- */
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+}
+
+.horizontal {}
+
+.vertical {}
+
+.big {}
+/* ------------------------ */
+
+.container{
+    /* width: 80vw; */
+    display :grid;
+    grid-gap: 3px;
+    grid-template:  repeat(3,100px) /repeat(12,1fr) ;
+    /* grid-template-columns: repeat(10,1fr) ;
+    /* grid-template-columns: repeat(auto-fit,100px) ;
+    grid-template-rows:  repeat(3,200px)  ; */
+    text-align: center;
+} 
+.header {
+grid-column: 1 / -1 ;
+
+}  
+.menu{
+    grid-column: 1 / 2 ;
+
+}
+.content{
+    
+    grid-column: 2 / -1 ;
+
+}
+
+.footer{
+        grid-column: 1 / -1 ;
+    }
+
+
+
