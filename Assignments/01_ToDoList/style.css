@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+ box-sizing: border-box;   
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+#ulShow{
+    list-style: none;
+}
+#ulShow li{
+    width: 40vw;
+    border-bottom: 1px solid black; 
+    text-align: center;
+}
+
+#saveBtn{
+    display :none
+}
+
+.d-block{
+    display: block;
+}
+.d-none{
+    display: none;
+}
