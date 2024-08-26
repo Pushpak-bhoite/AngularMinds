@@ -1,3 +1,5 @@
+
+
 let todoInput = document.getElementById("todoInput");
 let ulShow = document.getElementById("ulShow");
 let addBtn = document.getElementById("addBtn");
@@ -97,9 +99,13 @@ deleteAll.addEventListener('click', () => {
 
 function taskComplete(index) {
 
-    taskArr = JSON.parse(localStorage.getItem("storedItems"))
+        taskArr = JSON.parse(localStorage.getItem("storedItems"))
     taskArr[index].complete = !taskArr[index].complete
     localStorage.setItem("storedItems", JSON.stringify(taskArr))
     showData()
     
 }
+
+
+
+

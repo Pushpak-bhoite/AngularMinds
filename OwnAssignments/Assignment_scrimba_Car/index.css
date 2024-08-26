@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.hero {
+    background-image: url('MUSTANG.jpg');
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+    text-align: center;
+    font-size : 50px;
+    padding: 3.5rem;
+
+}    
+
+.hero-title{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    text-shadow: 0px 0px 10px black;
+}
+
+.sec2-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 17px;
+    padding: 10px;
+}
+
+.section-2{
+    padding: 25px;
+    background-color: linear-gradient(white,grey);
+}
+
+.var{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+}
+#variant-1{
+    background-image: url('car1.jpg');
+}
+#variant-2{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXAIpPh-EXjdzeYwSXrG8usrP4_AvjEKqEA&s');
+}
+#variant-3{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUA7A2jyxz-SBKAYz10pA49mfnqrD2-6XKAA&s');
+}
+
+.variants{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 0 20px; */
+}
+
+.info{
+        font-family: "Bruno Ace", sans-serif !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        width: 300px;
+        gap: 1rem;
+}
+
+
+.section-3{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    /* border: 1px solid black; */
+     border: none ;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 15px 70px 15px;
+    /* height: ; */
+    /* padding: ; */
+    background-color: aliceblue;
+}
+
+.profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}

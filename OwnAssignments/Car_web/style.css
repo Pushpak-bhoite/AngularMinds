@@ -1,55 +1,53 @@
 * {
-    height: 0;
-    width: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
     height: 100%;
     width: 100%;
-
 }
 
 #section1 {
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
     background-image: url('bgCar.jpg');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position-y: 68%;
+    background-position-x: 50%;
     background-size: cover;
-
-
-
 }
 
 .container {
-    /* position: relative; */
-    /* top: -40%; */
     height: 100%;
     width: 100%;
-    border: 1px solid black;
-    text-align: center !important;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    text-align: center ;
 }
 
 
 
 .hero-title {
-    border: 2px solid black;
-    text-align: center !important;
-    white-space: nowrap; 
+    text-align: center ;
     color: #fff;
     font-size: 8rem;
-    padding: 10px;
-    text-shadow: 0px 0px 5px black;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
+
+    text-shadow: 0px 0px 0.7rem black;
     font-family: "Racing Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.info-title{
+    /* text-shadow: 0 0 0.1rem black; */
+    margin-top: 1.8rem;
+
+
+     font-family: "Bruno Ace", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.variants{
+    display: flex;
 }
