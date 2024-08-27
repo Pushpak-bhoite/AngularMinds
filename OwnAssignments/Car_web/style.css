@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -19,16 +20,8 @@ html,body {
     background-size: cover;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    text-align: center ;
-}
-
-
-
 .hero-title {
-    text-align: center ;
+    text-align: center;
     color: #fff;
     font-size: 8rem;
 
@@ -38,16 +31,80 @@ html,body {
     font-style: normal;
 }
 
-.info-title{
-    /* text-shadow: 0 0 0.1rem black; */
-    margin-top: 1.8rem;
-
-
-     font-family: "Bruno Ace", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.info-title {
+    margin-top: 2.5rem;
+    font-family: "Bruno Ace", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.variants{
+.variants {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.var{
+    height: 230px;
+    width: 230px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 1rem black;
+    border-radius: 50%;
+    margin: 3rem 0 ;
+    transition: all .2s linear; /* Transition for transform property */
+
+    overflow: hidden;
+}
+
+.var:hover {
+    transform: scale(2); 
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+
+}
+
+#variant-1 {
+    background-image: url("car1.jpg");
+}
+
+#variant-2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXAIpPh-EXjdzeYwSXrG8usrP4_AvjEKqEA&s");
+}
+
+#variant-3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUA7A2jyxz-SBKAYz10pA49mfnqrD2-6XKAA&s");
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+.info h3, .info p {
+    margin: 0.5rem 0; /* Adds spacing above and below text */
+    max-width: 70%;
+}
+
+
+
+.section-3{
+    height: 40%;
+}
+.my-card{
+    border: 1px solid grey;
+    padding: 2rem;
+    background-color: aliceblue;
+    margin: 4rem ;
+    border-radius: 1rem;
+    font-family:  italic;
+}
+
+
+.my-card img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
 }
