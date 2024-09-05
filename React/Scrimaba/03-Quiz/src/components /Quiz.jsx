@@ -12,21 +12,19 @@ const Quiz = (props) => {
     return array.sort(() => Math.random() - 0.5);
   }
 
-  let mergeArr = [...ansArr, que.correct_answer];
   useEffect(() => {
-    let shuffleArr = shuffleArray(mergeArr);
-    let objArr = shuffleArr.map((data) => {
+    let arr = [...ansArr, que.correct_answer];
+     arr = shuffleArray(arr);
+    arr = arr.map((data) => {
       return ({ id: nanoid(), value: data, isSelected: false })
     })
-    setAnsState(objArr);
+    setAnsState(arr);
   }, [])
 
   function selectAnswer(event, id) {
-    console.log('ans',event.target?.textContent.trim() === que.correct_answer );
     let tempCond = event.target?.textContent.trim() === que.correct_answer
     props.setStateData((prev)=>{
       let x = prev.map((data)=> data.id === props.id ?{...data,condition:tempCond} :data)
-        console.log('x :', x);
         return x;
       // return ({...prev,condition:tempCond})
     })

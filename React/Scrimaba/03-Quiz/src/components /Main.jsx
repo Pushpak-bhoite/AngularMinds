@@ -22,7 +22,6 @@ const Main = () => {
       return data.condition === true
     })
     setCnt(selectedArr.length);
-    console.log('cnt.length', cnt)
   } else{
 
   }
@@ -36,7 +35,6 @@ const Main = () => {
 
   })
 
-  console.log('stateData:', stateData)
 
   return (
     <div className='container pt-5 '>
